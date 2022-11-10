@@ -13,6 +13,8 @@ app.use(express.json());
 app.use("/api", mainRoutes);
 app.use("/api/user", userRoutes);
 
-// Defi, () => {
+
+// Define the port where the server should listen
+app.listen(8800, () => {
     console.log("connected to the server")
 })
